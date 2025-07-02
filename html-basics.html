@@ -1,52 +1,80 @@
-<h1>HTML Basics</h1>
-<h2>Elements and Tags</h2>
-<p>
-    Create a file named helloworld.txt and open it in notepad or your favorite
-    text editor.
-</p>
-<p>
-    NOTE: The .txt extension is very important. Only programs that save pure
-    text should open this file format, and they should save it correctly. The
-    .txt file extension is for a file that contains only plain text with no
-    styling or formatting (much like this site!).
-</p>
-<p>Put the below code into the text file and save it</p>
-<code>
-    <xmp>
-    <h1>Hello World!</h1>
-    <p>This is my first website!</p></xmp>
-</code>
-<p>
-    Rename your file to helloworld.html and open it. Your browser should launch
-    and you should see a very simple website. We could have started with this
-    file ending in .html, but you would have had to right click it and open it
-    with a different program. This is because .html files open in the browser by
-    default.
-</p>
-<p>
-    You just did three things. You used
-    <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML">HTML</a> to
-    create two
-    <a href="https://developer.mozilla.org/en-US/docs/Glossary/Element"
-        >elements</a
-    >
-    using the
-    <a href="https://developer.mozilla.org/en-US/docs/Glossary/Element">tags</a>
-    &lt;h1&gt; and &lt;p&gt;. Click the three links to read about HTML,
-    elements, and tags.
-</p>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HTML Basics</title>
+    </head>
+    <body>
+        <h1>HTML Basics</h1>
+        <h2>Elements and Tags</h2>
+        <p>
+            Create a file named helloworld.txt and open it in notepad or your
+            favorite text editor.
+        </p>
+        <p>
+            NOTE: The .txt extension is very important. Only programs that save
+            pure text should open this file format, and they should save it
+            correctly. The .txt file extension is for a file that contains only
+            plain text with no styling or formatting (much like this site!).
+        </p>
+        <p>Put the below code into the text file and save it</p>
+        <code>
+            <xmp>
+            <h1>Hello World!</h1>
+            <p>This is my first website!</p></xmp>
+        </code>
+        <p></p>
+            Rename your file to helloworld.html and open it. Your browser should
+            launch and you should see a very simple website. We could have
+            started with this file ending in .html, but you would have had to
+            right click it and open it with a different program. This is because
+            .html files open in the browser by default.
+        </p>
+        <p>
+            You just did three things. You used
+            <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML"
+                >HTML</a
+            >
+            to create two
+            <a href="https://developer.mozilla.org/en-US/docs/Glossary/Element"
+                >elements</a
+            >
+            using the
+            <a href="https://developer.mozilla.org/en-US/docs/Glossary/Element"
+                >tags</a
+            >
+            &lt;h1&gt; and &lt;p&gt;. Click the three links to read about HTML,
+            elements, and tags.
+        </p>
 
-<p>
-    Note: At any time you can view the source code for this website. In Safari
-    go to Safari -> Settings -> Advanced -> "show features for web developers".
-    Then you can click the develop tab and select "show web inspector." In most
-    Chromium browsers (Brave, Chrome, Edge, etc) you can go to view -> developer
-    -> "developer tools". If that doesn't work, just google how to view page
-    source for the browser you are in.
-</p>
+        <p>
+            Note: At any time you can view the source code for this website. In
+            Safari go to Safari -> Settings -> Advanced -> "show features for
+            web developers". Then you can click the develop tab and select "show
+            web inspector." In most Chromium browsers (Brave, Chrome, Edge, etc)
+            you can go to view -> developer -> "developer tools". If that
+            doesn't work, just google how to view page source for the browser
+            you are in.
+        </p>
 
-<p>This website sure is ugly... we need to make it better.</p>
+        <p>This website sure is ugly... we need to make it better.</p>
 
-<h2>Attributes</h2>
+        <h2>Attributes</h2>
 
-Coming soon
+        <p>
+            Elements are pretty basic. However, you can provide additional
+            functionality to an element with attributes. Let's modify our
+            example.
+        </p>
+
+        <code>
+            <xmp>
+            <h1>Hello World!</h1>
+            <p>This is my first website!</p>
+            <img src="https://media.defense.gov/2006/Aug/10/2000546077/700/700/0/060810-F-JZ506-397.JPG" /></xmp>
+        </code>
+    <p>img on its own doesn't do much. It needs the attribute `src` to know where to find the image.</p>
+    <p>Here is a short reading on <a href="https://developer.mozilla.org/en-US/docs/Glossary/Attribute>attributes</a>, then you can read about <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Basic_HTML_syntax">html basics.</a></p>
+    </body>
+</html>
