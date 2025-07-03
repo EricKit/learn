@@ -1,0 +1,67 @@
+/* Navbar CSS */
+
+/* This is a class selector. Any element with the attribute
+class="navbar" will have this CSS applied to it */
+.navbar {
+    background-color: #1e2939; /* Navbar background color */
+}
+
+/* This applies to unordered lists "ul" with the class attribute navbar */
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* This CSS applies to any list item or "li" that is inside an
+unordered list "ul" with the class attribute navbar. */
+ul.navbar li {
+    float: left;
+}
+
+/* This one is interesting. To make it apply I had to make it very specific because it
+was being overriden by the class underneath this one. Read the link about specificity.
+This says to apply the CSS to a link "a" with the class "active" that is inside a
+list item that is inside an uordered list.*/
+ul li a.active {
+    background-color: #0d542b;
+    color: #7bf1a8;
+}
+
+/* This CSS applies to any link "a" that is inside a list item "li" that is inside an
+unordered list "ul" with the class attribute navbar. */
+ul.navbar li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: 99a1af;
+}
+
+/* This CSS applies to a link "a" when you hover over it! And only then. */
+ul.navbar a:hover {
+    background-color: #364153;
+    color: white;
+}
+
+/* Other CSS */
+
+body {
+    background-color: #f3f4f6;
+    color: #101828;
+    margin: 0;
+    padding: 0;
+    font-family: InterVariable;
+}
+
+/* The area where text will go below the navbar*/
+.page {
+    margin: 1.5rem;
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}

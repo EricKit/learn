@@ -1,0 +1,107 @@
+<head>
+    <link href="styles/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+</head>
+<body>
+    <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="html-basics.html">HTML Basics</a></li>
+        <li><a class="active" href="css-basics.html">CSS Basics</a></li>
+        <li><a href="javascript-basics.html">JavaScript Basics</a></li>
+        <li><a href="file-structure.html">File Structure</a></li>
+        <li><a href="developer-env.html">Developer Environment</a></li>
+    </ul>
+
+    <div class="page">
+        <h1>CSS Basics</h1>
+        <p>
+            Cascading Style Sheets (CSS) is a stylesheet language used to
+            describe how the HTML should look. HTML is easy, you have elements,
+            tags, and attributes. You can go to the W3Schools or MDN websites
+            and look up exactly what they do. CSS..... not that easy.
+        </p>
+        <p>
+            Learning CSS will be a journey, and one we won't learn on this
+            lesson. You will learn it through practice. This is one area I think
+            the LLMs will help with. Here are some basic CSS principals with
+            links to read more about it.
+        </p>
+        <p>
+            First, open this website in the web inspector. You should see a
+            sources tab. In that tab you should find styles/styles.css. Open
+            this file while you read this.
+        </p>
+        <p>CSS syntax is in the format</p>
+        <code> what-it-applies-to { what-to-change: value; } </code>
+        <p>
+            The what-it-applies-to can be an element, id, class, or some
+            combination of the items. These are called selectors. In HTML, most
+            elements can have the attribute "class" or "id" to help you "select"
+            that class in CSS.
+        </p>
+        <code>&lt;div class="some-class" id="some-id"&gt;</code>
+        <p>
+            Think of id as a unique identifier for an element, while class is a
+            way to group elements with similar styles. In CSS, you can apply
+            "styles" to elements on a website by using "selectors" to tell the
+            browser where you want to apply these styles. In CSS, selectors can
+            be element types such as an H1, classes which are specified with a
+            "." or specific elements which are specified with a "#". Examples of
+            selectors are "h1", ".some-class", or "#some-id".
+        </p>
+        <p>
+            If you separate the selectors with commas, it will apply to all of
+            them. For example "h1, p, .active, #id1" will apply to h1 and p
+            elements, as well as elements with the class "active", and the one
+            element with the id of "id1".These are called selectors.
+        </p>
+        <p>
+            You can also do embedded selectors to get more specicific.
+            "nav.navbar ul li p.article" would apply only to "p" paragraph
+            elements with the class "article" that full under a list item that
+            fall under an unordered list that full under a "nav" element with
+            the class "navbar". That's a VERY specific selector.
+        </p>
+        <p>
+            The text inside of the curly braces {} is just a set of "properties"
+            with values to style the elements that are matched to the selector.
+            Look at this page and see why it looks the way it does! Colors are
+            specified in multiple formats, you will see hexidecimal here which
+            is in the format #FFF or #FFFFFF.
+        </p>
+        <ul>
+            <li>
+                <a
+                    href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/What_is_CSS"
+                    >Reading</a
+                >
+                - Read all the links under "CSS Styling Basics". This is a lot
+                of reading. It will save you hours later.
+            </li>
+            <li>
+                <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_cascade/Specificity"
+                    >Specificity</a
+                >
+                - The same element may have multiple conflicting styles. You may
+                specificy a default font size for the body element, then a more
+                specific one for the H1 elements, then an even more specific one
+                for the class "navbar". Which one applies? Specificity is your
+                answer. In the web inspector you can select an element and see
+                <b>all</b> of the styles that apply to it, and which ones are
+                actually being applied.
+            </li>
+            <li>
+                <a href="https://www.w3schools.com/CSSref/index.php"
+                    >Properties</a
+                >
+                - Here is a list of all the properties!
+            </li>
+        </ul>
+        <p>
+            Practice learning CSS and debugging. Open up this website and look
+            at the CSS file. I have commented it to explain what you are seeing
+            on this website.
+        </p>
+    </div>
+</body>
