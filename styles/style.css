@@ -24,7 +24,7 @@ ul.navbar li {
 was being overriden by the class underneath this one. Read the link about specificity.
 This says to apply the CSS to a link "a" with the class "active" that is inside a
 list item that is inside an uordered list.*/
-ul li a.active {
+ul.navbar li a.active {
     background-color: #0d542b;
     color: #7bf1a8;
 }
@@ -36,7 +36,7 @@ ul.navbar li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    color: 99a1af;
+    color: #99a1af;
 }
 
 /* This CSS applies to a link "a" when you hover over it! And only then. */
