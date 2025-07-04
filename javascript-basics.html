@@ -1,21 +1,165 @@
-<head>
-    <link href="styles/style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
-</head>
-<body>
-    <ul class="navbar">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="html-basics.html">HTML Basics</a></li>
-        <li><a href="css-basics.html">CSS Basics</a></li>
-        <li>
-            <a class="active" href="javascript-basics.html"
-                >JavaScript Basics</a
-            >
-        </li>
-        <li><a href="file-structure.html">File Structure</a></li>
-        <li><a href="developer-env.html">Developer Environment</a></li>
-    </ul>
-    <div class="page">
-        <h1>More to come</h1>
-    </div>
-</body>
+<!doctype html>
+<html lang="en">
+    <head>
+        <link href="styles/style.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    </head>
+    <body>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="html-basics.html">HTML Basics</a></li>
+            <li><a href="css-basics.html">CSS Basics</a></li>
+            <li>
+                <a class="active" href="javascript-basics.html"
+                    >JavaScript Basics</a
+                >
+            </li>
+            <li><a href="file-structure.html">File Structure</a></li>
+            <li><a href="developer-env.html">Developer Environment</a></li>
+        </ul>
+        <div class="page">
+            <h1>Javascript Basics</h1>
+            <h2>Introduction</h2>
+            <p>
+                This is the area I know best among HTML, CSS, and Javascript.
+                The goal in this short intro is to get you coding. Over the
+                course of the next few months you will learn more.
+            </p>
+            <h3>Variables</h3>
+            <p>
+                Let's start with the most basic of basics. Variables are used to
+                store values. In Javascript variables can be of multiple types.
+                There are 8 basic
+                <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Data_structures"
+                    >primative types</a
+                >.
+            </p>
+            <ul>
+                <li>Number - Used to store numeric values</li>
+                <li>String - Used to store text values</li>
+                <li>Boolean - Used to store true or false values</li>
+                <li>
+                    Object - Much more complex than the other types, I will
+                    comment on featuers of objects as we use them
+                </li>
+                <li>
+                    undefined - You will use this a lot! The variables has no
+                    value.
+                </li>
+                <li>
+                    null - It's null...it's weird. It provides unexpected
+                    results in equality, try not to use it.
+                </li>
+                <li>BigInt - We won't use this</li>
+                <li>
+                    Symbol - You will use this, but you won't know you are using
+                    it. Don't worry about it now.
+                </li>
+            </ul>
+            <p>
+                In javascript you declare a varaible with <code>let</code> or
+                <code>const</code>. Let is how you declare a variable that you
+                plan to change. Const is how you declare a constant variable
+                that does not change. You should default to const until you have
+                to use let.
+            </p>
+            <pre><code>
+            let result = 0;
+            const firstNumber = 5;
+            const secondNumber = 10;
+            result = firstNumber + secondNumber;
+            console.log(result); // Output: 15 to the console in your web inspector in the browser.
+        </code></pre>
+            <h2>Equality and Assignments</h2>
+            <p>
+                You will often test for equality in javascript or assign values
+                to variables. The <code>=</code> operator is an assignment
+                operator. It means take the value on the right side and put it
+                into the variable on the left. It is not testing equality, it is
+                assigning!
+            </p>
+            <p>
+                <code>==</code> is a test for equality. But it provides
+                unexpected results. It will do type conversions then compare for
+                equality. For exmaple if you compare the string "0" to the
+                number 0, it will return true. If you compare the string "0" to
+                the boolean false, it will return true! There are many edge
+                cases and you should not use this.
+            </p>
+            <p>
+                <code>===</code> is a test for equality. It will not do type
+                conversions. It will compare the value and the type. If the
+                types are different, it will return false. You can also do > or
+                &lt; as you would expect. You will notice the //. This is just a
+                comment and will not be viewed as code.
+            </p>
+            <pre>
+                <code>
+    "0" = 0 // Error, you can't assign a value to "0".
+    "0" == 0 // True
+    "0" == false // returns True
+    "0" == true // returns false
+    "0" === 0 // False!
+    const age = 25;
+    age === 21 // False
+    age >= 21 // True
+                </code>
+            </pre>
+            <p>
+                There are other control structures we will learn about in
+                person. I will just give a few examples below. Here is the
+                structure of an if statement. You don't have to include the
+                <code>else</code> or <code>else if</code>.
+            </p>
+
+            <pre><code>
+    const age = 25;
+    if (age >= 21) then {       // First case
+        console.log("They can drink.")
+    } else if (age <= 12) {     // You can add another condition if hte first one is false
+        console.log("They can have orange juice.")
+    } else {                    // Covers all other cases
+        console.log("Watch out for them in this age group")
+    }
+            </code></pre>
+            <p>Here is a for loop</p>
+            <pre><code>
+    let age = 20;
+    for (let i = 0; i &LT; 10; i++) { // Start at 0, go to 9 incrementing by 1.
+        age = age + 1
+        console.log('They are ' + age + ' years old');
+    }
+            </code></pre>
+            <p>
+                The above code will print "They are 10 years old" "They are 11
+                years old" ... "They are 19 years old". There is much much more
+                to go over. But let's put this into action. You should have
+                Visual Studio Code setup now, and use this write this code.
+                Create javascript-basics.js and put itin the same folder.
+            </p>
+            <p>
+                Let's get values from the user. For this we will use an input.
+            </p>
+            <input type="number" id="first" />
+            <input type="number" id="second" />
+            <input id="add" type="button" value="add" />
+            <output id="result">0</output>
+        </div>
+        <p>
+            To see how this works, open up the web inspector and look at
+            javascript-basics.js and the html. It uses the element IDs to get
+            the values, then puts the result into the right output. I know this
+            is a lot. It's time to start your own project. We will need to sit
+            down, set up your environment, then get you started.
+        </p>
+        <p>
+            Congrats! You have made a website that uses HTML, CSS, and
+            Javascript from scratch. Most new developers skip this step and miss
+            out on the foundational knowledge of how it works. Now we will make
+            it easier and use a framework. This get element by ID stuff is
+            annoying. We won't be doing that anymore...more to follow.
+        </p>
+    </body>
+    <script src="./javascript-basics.js"></script>
+</html>
