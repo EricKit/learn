@@ -1,6 +1,18 @@
 <head>
   <link href="styles/style.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/github.min.css"
+  />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/languages/javascript.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/languages/html.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/languages/css.min.js"></script>
+
+  <script>
+      hljs.highlightAll();
+  </script>
 </head>
 <body>
   <ul class="navbar">
@@ -28,13 +40,25 @@
       styles.css. Open this file while you read this.
     </p>
     <p>CSS syntax is in the format</p>
-    <code> what-it-applies-to { what-to-change: value; } </code>
+    <pre><code class="language-css"> 
+  selector { 
+    property: value; 
+  }
+    </code></pre>
     <p>
-      The what-it-applies-to can be an element, id, class, or some combination of the items. These are called selectors.
+      The selector can be an element, id, class, or some combination of the items. These are called selectors.
       In HTML, most elements can have the attribute "class" or "id" to help you "select" that class in CSS. Here is an
       HTML element with a class and id.
     </p>
-    <code>&lt;div class="some-class" id="some-id"&gt;</code>
+    <pre><code> 
+  &lt;div class="some-class" id="some-id"&gt;
+    </code></pre>
+
+  <pre><code class="language-css"> 
+  .some-class, #some-id, h1 { 
+    max-width: 600px;
+  }
+  </code></pre>
     <p>
       Think of id as a unique identifier for an element, while class is a way to group elements with similar styles. In
       CSS, you can apply "styles" to elements on a website by using "selectors" to tell the browser where you want to

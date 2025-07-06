@@ -1,6 +1,18 @@
 <head>
   <link href="styles/style.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/github.min.css"
+  />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/languages/javascript.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/languages/html.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/languages/css.min.js"></script>
+
+  <script>
+      hljs.highlightAll();
+  </script>
 </head>
 <body>
   <ul class="navbar">
@@ -42,6 +54,56 @@
       For both of VSCode and Zed you will just open your project <b>folder</b>. All your files will be on the left side.
       Do not open just a singular file. VSCode and Zed will understand how your project files talk to each other.
     </p>
-    Want to see all my code on GitHub? The project is <a href="https://github.com/EricKit/learn">here</a>.
+    <p>>Want to see all my code on GitHub? The project is <a href="https://github.com/EricKit/learn">here</a>.</p>
+    <h2>SolidJS</h2>
+    <p>
+      Got to the <a href="https://www.solidjs.com">SolidJS</a> website. Click get started. Go to the "Try Solid" section
+      and the lines of terminal instructions that start with npx. Don't do the typescript one for now.
+    </p>
+    <p>
+      Go to the folder you want to make the folder for in. For example, I go to "~/projects/". I recommend this folder
+      because it will have thousands of files you don't want backed up to iCloud. In terminal -
+    </p>
+    <pre><code class="language-bash">
+    cd ~
+    mkdir projects
+    cd projects
+    </code></pre>
+    <p>
+      The above commands will put you in your user directory "~" then make a folder called projects. Next you go into
+      that folder with the change directory command "cd". Your first command to run is -
+    </p>
+    <pre><cod class="language-bash">
+    npx degit solidjs/templates/js my-app
+    </code></pre>
+    <p>This should say "command not found". To use NPX, we need NPM, and to install NPM, we need NVM. Confused?</p>
+    <p>
+      Node is the program that we will be running in the terminal. It is run with npm which is "node package manager."
+      To install npm, we need "node version manager" or nvm. This is important because you may run multiple versions of
+      node. Run the following code in your terminal. Then close and reopen terminal. NVM should work.
+    </p>
+    <pre><code class="language-bash">
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+    </code></pre>
+    <p>Next, let's install the LTS node (Long Term Support). Run the code below</p>
+    <pre><code class="language-bash">
+    nvm install --reinstall-packages-from=current 'lts/*'
+    </code></pre>
+    <p>
+      Now you have nvm, node, npm, and npx. Now we can run that first command above that starts with npx from the
+      solidjs website. Go to your ~/projects and run the command.
+    </p>
+    <p>
+      Now go into the folder you made my-app by typing `cd my-app`. Next we need to install all the solidjs
+      dependencies. Type `npm install`
+    </p>
+    <p>
+      It's ready to use and modify! Type `npm run dev` which will open a web server. Copy/paste the link
+      http://localhost:3000 into your browser to see the website.
+    </p>
+    <p>
+      Open up VSCode and open the `my-app` folder. That's a solidJS project. You can continue following the "getting
+      started" on their website.
+    </p>
   </div>
 </body>
