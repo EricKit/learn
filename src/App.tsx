@@ -1,16 +1,13 @@
 // MyComponent.jsx
-import { Component } from 'solid-js';
+import { Component, ParentProps } from 'solid-js';
 import Navbar from './modules/navbar';
 import Page from './modules/page';
-import Frameworks from './modules/frameworks';
 
-const App: Component = () => {
+const App: Component<ParentProps> = (props) => {
   return (
     <div>
       <Navbar></Navbar>
-      <Page>
-        <Frameworks></Frameworks>
-      </Page>
+      <Page>{props.children}</Page>
     </div>
   );
 };
