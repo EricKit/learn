@@ -22,7 +22,14 @@ const Frameworks: Component = () => {
           Allows you to easily build templates and embed "modules" into pages. For example, you don't need to rewrite
           the navbar on every page. A single page will be made of many modules that are self-contained.
         </li>
-        <li>Handles routing to multiple pages on your website.</li>
+        <li>
+          Handles routing to multiple pages on your website (Look at the URL of this page vs the previous ones, much
+          cleaner).
+        </li>
+        <li>
+          Loading is much better. Go back to the old page and watch how it loads when you move pages. Then click between
+          pages on this one. It's not actually loading a new page, it's just swapping out modules.
+        </li>
         <li>Allows reactivity for the page to update on changes easily.</li>
         <li>Lets you easily add other developer's code so you don't have to write it yourself.</li>
       </ul>
