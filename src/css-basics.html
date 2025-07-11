@@ -1,22 +1,19 @@
 <head>
-  <link href="styles/style.css" rel="stylesheet" />
+  <link href="./styles/style.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
-  <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/github.min.css"
-  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/github.min.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/languages/javascript.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/languages/html.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/languages/css.min.js"></script>
 
   <script>
-      hljs.highlightAll();
+    hljs.highlightAll();
   </script>
 </head>
 <body>
   <ul class="navbar">
-    <li><a href="index.html">Home</a></li>
+    <li><a href="/index.html">Home</a></li>
     <li><a href="html-basics.html">HTML Basics</a></li>
     <li><a class="active" href="css-basics.html">CSS Basics</a></li>
     <li><a href="javascript-basics.html">JavaScript Basics</a></li>
@@ -46,15 +43,15 @@
   }
     </code></pre>
     <p>
-      The selector can be an element, id, class, or some combination of the items. These are called selectors.
-      In HTML, most elements can have the attribute "class" or "id" to help you "select" that class in CSS. Here is an
-      HTML element with a class and id.
+      The selector can be an element, id, class, or some combination of the items. These are called selectors. In HTML,
+      most elements can have the attribute "class" or "id" to help you "select" that class in CSS. Here is an HTML
+      element with a class and id.
     </p>
     <pre><code> 
   &lt;div class="some-class" id="some-id"&gt;
     </code></pre>
 
-  <pre><code class="language-css"> 
+    <pre><code class="language-css"> 
   .some-class, #some-id, h1 { 
     max-width: 600px;
   }

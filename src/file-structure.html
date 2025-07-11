@@ -1,0 +1,65 @@
+<head>
+  <link href="./styles/style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+</head>
+<body>
+  <ul class="navbar">
+    <li><a href="/index.html">Home</a></li>
+    <li><a href="html-basics.html">HTML Basics</a></li>
+    <li><a href="css-basics.html">CSS Basics</a></li>
+    <li><a href="javascript-basics.html">JavaScript Basics</a></li>
+    <li>
+      <a class="active" href="file-structure.html">File Structure</a>
+    </li>
+    <li><a href="developer-env.html">Developer Environment</a></li>
+  </ul>
+  <div class="page">
+    <h1>File Structure</h1>
+    <p>
+      Files on your computer are organized in folders. The "address" for one of these folders is called a path.
+      Operating systems intentionally hide these paths from users to make the operating system more user-friendly. Most
+      users don't need to understand the file structure. The operating system will create shortcuts to these folders and
+      place them on the left side of your file explorer (Windows) or finder (Mac).
+    </p>
+    <p>
+      The root path is the topmost folder on your computer. It's usually called "C:\" on Windows or "/" on Mac. There
+      are multiple folders in there, such as "Program Files" or "Applications." Another folder is "Users," which
+      contains folders for each user on the computer. Your Desktop's path on a Mac is /Users/username/Desktop or
+      C:\Users\username\Desktop on Windows.
+    </p>
+    <p>
+      You should always know where your files are on your computer! Even if you have "iCloud" on the left side of
+      finder, those folders still have a path on your computer. All the cloud means is that the files may be backed up
+      to a server and downloaded when you request them. But the Operating system manages all of that, and it should be
+      transparent to you.
+    </p>
+    <h2>Terminal</h2>
+    <p>
+      Here is a very beginner lesson on the terminal to explore your file system. If you are on Windows you need WSL to
+      do this, but you can also do it in Power Shell or the command prompt. The syntax will be different than what I'm
+      describing.
+    </p>
+    <h3>Common Commands</h3>
+    <ul>
+      <li>
+        cd [folder] - Open up the folder you type. If you give an absolute path such as /Users/username it will open
+        that path. If you give a relative (not leading with a /), it will open the folder relative to your current
+        location.
+      </li>
+      <li>. - present location. Typing "cd myFolder" and "cd ./myFolder" is the same thing.</li>
+      <li>
+        .. - previous folder. If you were in /Users/eric and wanted to go to /Users/trojan you could type "cd ../trojan"
+      </li>
+      <li>ls - displays all the files in a folder</li>
+      <li>mv [from] [to] - Move a file or folder such as "mv ./file.txt ../differenFolder/"</li>
+      <li>rm [file] - delete (Be careful! It will be gone forever)</li>
+    </ul>
+    <p>
+      Open up your terminal and type "cd /" then type "ls" and you will see all the files and folders in your root
+      directory. Then type "cd Users" and type "ls" again to see all the users on your computer. Eventually... the
+      terminal will replace you clicking around in finder. It's faster when you get good at it. Use tab to auto complete
+      when you've typed enough. For example "cd /U [tab]" and if that is the only folder that starts with U, it will
+      auto complete.
+    </p>
+  </div>
+</body>
