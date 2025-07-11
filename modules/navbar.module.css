@@ -1,0 +1,31 @@
+/* Navbar CSS */
+
+.navbar {
+  background-color: #1e2939; /* Navbar background color */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.item {
+  float: left;
+}
+
+a.active {
+  background-color: #0d542b;
+  color: #7bf1a8;
+}
+
+.link {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: #99a1af;
+}
+
+.link:hover {
+  background-color: #364153;
+  color: white;
+}
