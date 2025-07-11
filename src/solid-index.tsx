@@ -5,7 +5,7 @@ import './solid-index.css';
 import App from './App';
 import AnotherPage from './pages/AnotherPage';
 import NotFound from './pages/NotFound';
-import Frameworks from './pages/frameworks';
+import Frameworks from './pages/Frameworks';
 
 const root = document.getElementById('root');
 
