@@ -1,17 +1,14 @@
 <head>
   <link href="./styles/style.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
-  <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/github.min.css"
-  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/github.min.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/languages/javascript.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/languages/html.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/languages/css.min.js"></script>
 
   <script>
-      hljs.highlightAll();
+    hljs.highlightAll();
   </script>
 </head>
 <body>
@@ -24,6 +21,7 @@
     <li>
       <a class="active" href="./developer-env.html">Developer Environment</a>
     </li>
+    <li><a href="solid-index.html">Frameworks</a></li>
   </ul>
   <div class="page">
     <h1>Developer Environment</h1>
@@ -73,7 +71,7 @@
       The above commands will put you in your user directory "~" then make a folder called projects. Next you go into
       that folder with the change directory command "cd". Your first command to run is -
     </p>
-    <pre><cod class="language-bash">
+    <pre><code class="language-bash">
     npx degit solidjs/templates/js my-app
     </code></pre>
     <p>This should say "command not found". To use NPX, we need NPM, and to install NPM, we need NVM. Confused?</p>
@@ -91,19 +89,21 @@
     </code></pre>
     <p>
       Now you have nvm, node, npm, and npx. Now we can run that first command above that starts with npx from the
-      solidjs website. Go to ~/projects. Remember that ~ is the same as /Users/username. You are going to /Users/username/projects.
+      solidjs website. Go to ~/projects. Remember that ~ is the same as /Users/username. You are going to
+      /Users/username/projects.
     </p>
     <p>
-      When the npx command runs, it will create a whole new project in a folder called 'my-app. Go into that folder by typing `cd my-app`. Next we need to install all the solidjs
-      dependencies. Type `npm install` while you are in that folder.
+      When the npx command runs, it will create a whole new project in a folder called 'my-app. Go into that folder by
+      typing `cd my-app`. Next we need to install all the solidjs dependencies. Type `npm install` while you are in that
+      folder.
     </p>
     <p>
       It's ready to use and modify! Type `npm run dev` which will open a web server. Copy/paste the link
       http://localhost:3000 into your browser to see the website.
     </p>
     <p>
-      In VSCode and open the `my-app` folder. That's a solidJS project. You can continue following the "getting
-      started" on their website. 
+      In VSCode and open the `my-app` folder. That's a solidJS project. You can continue following the "getting started"
+      on their website.
     </p>
 
     <p>Let's move into our first framework learning, <a href="solid-index.html">SolidJS</a></p>

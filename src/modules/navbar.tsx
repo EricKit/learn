@@ -12,8 +12,8 @@ const Navbar: Component = () => {
           </A>
         </li>
         <li class={styles.item}>
-          <A href="/anotherpage" class={styles.link} activeClass={styles.active}>
-            Another Page
+          <A href="/components" class={styles.link} activeClass={styles.active}>
+            Components
           </A>
         </li>
         <li class={styles.item}>

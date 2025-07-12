@@ -3,9 +3,9 @@ import { Route, Router } from '@solidjs/router';
 
 import './solid-index.css';
 import App from './App';
-import AnotherPage from './pages/AnotherPage';
 import NotFound from './pages/NotFound';
 import Frameworks from './pages/Frameworks';
+import Components from './pages/Components';
 
 const root = document.getElementById('root');
 
@@ -19,7 +19,7 @@ render(
   () => (
     <Router explicitLinks={true} root={App}>
       <Route path="/solid" component={Frameworks} />
-      <Route path="/anotherpage" component={AnotherPage} />
+      <Route path="/components" component={Components} />
       <Route path="*" component={NotFound} />
     </Router>
   ),
