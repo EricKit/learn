@@ -20,8 +20,8 @@ const Frameworks: Component = () => {
           in your .jsx files.
         </li>
         <li>
-          Allows you to easily build templates and embed "modules" into pages. For example, you don't need to rewrite
-          the navbar on every page. A single page will be made of many modules that are self-contained.
+          Allows you to easily build templates and embed "components" into pages. For example, you don't need to rewrite
+          the navbar on every page. A single page will be made of many components that are self-contained.
         </li>
         <li>
           Handles routing to multiple pages on your website (Look at the URL of this page vs the previous ones, much
@@ -29,7 +29,7 @@ const Frameworks: Component = () => {
         </li>
         <li>
           Loading is much better. Go back to the old page and watch how it loads when you move pages. Then click between
-          pages on this one. It's not actually loading a new page, it's just swapping out modules.
+          pages on this one. It's not actually loading a new page, it's just swapping out components.
         </li>
         <li>Allows reactivity for the page to update on changes easily.</li>
         <li>Lets you easily add other developer's code so you don't have to write it yourself.</li>
@@ -58,8 +58,8 @@ const Frameworks: Component = () => {
           index.tsx - This, and the rest of <b>your</b> code will be in the `src` folder. index.tsx has a line of code
           that you have used before. It's the old `getElementById`. This gets the `div` element from index.html and
           stores it into the variable `root`. The next thing it does is run a function called `render` that accepts this
-          variable `root` and tells the framework what to render. In this case, it renders the module `App`. This is the
-          launch point for your entire application, and the framework manages it through this injection.
+          variable `root` and tells the framework what to render. In this case, it renders the component `App`. This is
+          the launch point for your entire application, and the framework manages it through this injection.
         </li>
         <CodeBlock
           code={`
